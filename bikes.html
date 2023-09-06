@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikes</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="bikes.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-9WZC7V621C"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9WZC7V621C');
+  </script>
+  <body>
+    <!------------------------------------------------------------------------ Navbar ------------------------------------------------------------------------>
+    <header class="header">
+      <div class="container2">
+        <div class="header-main">
+          <div class="logo">
+            <a href="index.html">MTB RIDE HUB</a>
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <!-- <img src="img/close.svg" alt="close" /> -->
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="#" data-toggle="sub-menu"
+                  >Bikes <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="#sram">Sram</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#rockshox">Rockshox</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#magura">Magura</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#shimano">Shimano</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#avid">Avid</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#zipp">Zipp</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="parts.html" data-toggle="sub-menu"
+                  >Parts <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="parts.html#sram">Sram</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="parts.html#shimano">Shimano</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="parts.html#rockshox">Rockshox</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="index.html#about">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="blog.html">Our blog</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+        </div>
+      </div>
+    </header>
+    <!------------------------------------------------------------------------ Home ------------------------------------------------------------------------>
+    <div class="bikes-home">
+      <div class="bikes-home-box">
+        <video
+          src="img/mtb-random-img/mtb-video-1.mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+        <div class="bikes-home-text">
+          <h1>best <span>mtb parts</span> companies</h1>
+          <h3>Choose the best for you!</h3>
+          <!-- <a href="#sram" class="bikes-home-btn">Let's go!</a> -->
+        </div>
+      </div>
+    </div>
+    <!------------------------------------------------------------------------ Bikes ------------------------------------------------------------------------>
+    <!-- Start 1. bike -->
+    <section class="container bikes-section" id="rockshox">
+      <div class="heading">
+        <span>All Bikes</span>
+        <h2>Rockshox</h2>
+        <p>They produce the best suspension for bicycles</p>
+      </div>
+      <div class="slider">
+        <!-- images -->
+        <div class="slider-items slider-items2">
+          <!-- 1st -->
+          <img src="img/bike-parts/magura1.png" alt="" class="slider-item" />
+          <img src="img/bike-parts/magura2.png" alt="" class="slider-item" />
+          <img src="img/bike-parts/magura3.png" alt="" class="slider-item" />
+        </div>
+        <!-- control icon -->
+        <div class="slider-controls">
+          <span class="bx prev" onclick="changeSlide2(-1)"
+            ><i class="bx bx-chevron-left"></i
+          ></span>
+          <span class="bx next" onclick="changeSlide2(1)"
+            ><i class="bx bx-chevron-right"></i
+          ></span>
+        </div>
+        <!-- slider indicator -->
+        <div class="slider-indicators slider-indicators2">
+          <span onclick="moveTo(1)"></span>
+          <span onclick="moveTo(2)"></span>
+          <span onclick="moveTo(3)"></span>
+        </div>
+      </div>
+      <div class="bike-text">
+        <p>
+          RockShox, a brand from the Sram family, has been known among mountain
+          bikers for decades for the production of MTB forks, shock absorbers
+          and droppers. The wide range of adjustment options for their shock
+          absorbers and suspension system leaves riders of all disciplines, from
+          beginners to professionals, a guaranteed excellent driving experience.
+        </p>
+        <a href="#" class="btn">ROCKSHOX parts</a>
+      </div>
+    </section>
+    <!-- End 1. bike -->
+    <!-- Start 2. bike -->
+    <section class="container bikes-section" id="sram">
+      <div class="heading">
+        <span>All Bikes</span>
+        <h2>Sram</h2>
+        <p>A leading manufacturer of bicycle components and drives.</p>
+      </div>
+      <div class="slider">
+        <!-- images -->
+        <div class="slider-items slider-items1">
+          <!-- 1st -->
+          <img src="img/bike-parts/avid1.png" alt="" class="slider-item" />
+          <img src="img/bike-parts/avid2.png" alt="" class="slider-item" />
+          <img src="img/bike-parts/avid3.png" alt="" class="slider-item" />
+        </div>
+        <!-- control icon -->
+        <div class="slider-controls">
+          <span class="bx prev" onclick="changeSlide(-1)"
+            ><i class="bx bx-chevron-left"></i
+          ></span>
+          <span class="bx next" onclick="changeSlide(1)"
+            ><i class="bx bx-chevron-right"></i
+          ></span>
+        </div>
+        <!-- slider indicator -->
+        <div class="slider-indicators slider-indicators1">
+          <span onclick="moveTo(1)"></span>
+          <span onclick="moveTo(2)"></span>
+          <span onclick="moveTo(3)"></span>
+        </div>
+      </div>
+      <div class="bike-text">
+        <p>
+          SRAM is a leading manufacturer of high-quality bicycle components,
+          including derailleurs, cassettes, brakes and derailleurs. Founded in
+          1987, it was founded by Scott King, Sran Ray and Sam Patterson in
+          Chichahu. The company has become a major player in cycling, known for
+          its cutting edge technologically innovative products and commitment to
+          excellence in the industry. Whether you're a serious racer or just
+          enjoy trail riding, SRAM components are designed to help you get the
+          most out of your ride. With features such as lightweight materials,
+          precision engineering and intuitive operation, these components are
+          built to perform at the highest level, regardless of your riding
+          style. Some of the key benefits of using SRAM components include
+          faster shifting, smoother braking and better handling. By choosing
+          products from SRAM, you can improve the performance of your bike and
+          take your riding to the next level. Plus, with a wide range of
+          products to choose from, you can customize your bike to meet your
+          specific needs and preferences.
+        </p>
+        <a href="#" class="btn">SRAM parts</a>
+      </div>
+    </section>
+    <!-- End 2. bike -->
+    <!-- Start 3. bike -->
+    <section class="container bikes-section" id="magura">
+      <div class="heading">
+        <span>All Bikes</span>
+        <h2>Magura</h2>
+        <p>Brakes are popular among mountain bikers who ride steep terrain.</p>
+      </div>
+      <div class="slider">
+        <!-- images -->
+        <div class="slider-items slider-items3">
+          <!-- 1st -->
+          <img src="img/bike-parts/zip1.png" alt="" class="slider-item" />
+          <img src="img/bike-parts/zip2.png" alt="" class="slider-item" />
+          <img src="img/bike-parts/zip3.png" alt="" class="slider-item" />
+        </div>
+        <!-- control icon -->
+        <div class="slider-controls">
+          <span class="bx prev" onclick="changeSlide3(-1)"
+            ><i class="bx bx-chevron-left"></i
+          ></span>
+          <span class="bx next" onclick="changeSlide3(1)"
+            ><i class="bx bx-chevron-right"></i
+          ></span>
+        </div>
+        <!-- slider indicator -->
+        <div class="slider-indicators slider-indicators3">
+          <span onclick="moveTo(1)"></span>
+          <span onclick="moveTo(2)"></span>
+          <span onclick="moveTo(3)"></span>
+        </div>
+      </div>
+      <div class="bike-text">
+        <p>
+          What is a road or mountain bike without brakes and brake pads?
+          Besides, it would be dangerous! It is important to invest in
+          inconspicuous but essential parts. Magura brakes allow you to assemble
+          your own brake system, depending on whether you want to use your bike
+          for touring or mountain biking. Choosing the right accessories is
+          crucial for optimal interaction and functionality.
+        </p>
+        <a href="#" class="btn">MAGURA parts</a>
+      </div>
+    </section>
+    <!-- End 3. bike -->
+
+    <!------------------------------------------------------------------------ Button Top of page------------------------------------------------------------------------>
+    <a href="#" class="to-top">
+      <i class="bx bx-up-arrow-circle"></i>
+    </a>
+    <!------------------------------------------------------------------------ Footer ------------------------------------------------------------------------>
+    <section class="footer" id="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <a href="#" class="logo">MTB RIDE HUB</a>
+          <div class="social">
+            <a
+              href="https://www.instagram.com/mtbridehub/?igshid=ZDdkNTZiNTM%3D&fbclid=IwAR1wmHmSKmaZeAoDMjJ4fXDtkwxkB7qQKqr8v8yeYzuiz7hWylZKS7YgjM0"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@mtbridehub?_t=8btslNB47li&_r=1&fbclid=IwAR34BF_cbNireMWu20xud9ksos6BJT-rxyFgmjX9hf_uYBdlXxtKHMCxqEA"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+            <a href="https://www.youtube.com/@mtbridehub"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Page</h3>
+          <a href="index.html">Home</a>
+          <a href="bikes.html">Bikes</a>
+          <a href="parts.html">Parts</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-box">
+          <h3>Links</h3>
+          <a href="https://www.shimano.com/en/">Shimano</a>
+          <a href="https://www.magura.com/en/EUR/">Magura</a>
+          <a
+            href="https://www.sram.com/en/rockshox/products/forks?filters=&sort=Relevancy&page=1"
+            >Rockshox</a
+          >
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <p>info@mtbridehub.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&#169; MtbRideHub All Right Reserved</p>
+    </div>
+    <!-- Link to JS -->
+    <script src="main.js"></script>
+    <script src="bike.js"></script>
+  </body>
+</html>

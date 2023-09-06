@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="blog.css" />
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-9WZC7V621C"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9WZC7V621C');
+  </script>
+  <body>
+    <!------------------------------------------------------------------------ Navbar ------------------------------------------------------------------------>
+    <header class="header">
+      <div class="container2">
+        <div class="header-main">
+          <div class="logo">
+            <a href="index.html">MTB RIDE HUB</a>
+          </div>
+          <div class="open-nav-menu">
+            <span></span>
+          </div>
+          <div class="menu-overlay"></div>
+          <!-- navigation menu start -->
+          <nav class="nav-menu">
+            <div class="close-nav-menu">
+              <!-- <img src="img/close.svg" alt="close" /> -->
+              <i class="bx bx-x"></i>
+            </div>
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="bikes.html" data-toggle="sub-menu"
+                  >Bikes <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="bikes.html#sram">Sram</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="bikes.html#rockshox">Rockshox</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="bikes.html#magura">Magura</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="bikes.html#shimano">Shimano</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="bikes.html#avid">Avid</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="bikes.html#zipp">Zipp</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children">
+                <a href="parts.html" data-toggle="sub-menu"
+                  >Parts <i class="plus"></i
+                ></a>
+                <ul class="sub-menu">
+                  <li class="menu-item">
+                    <a href="parts.html#sram">Sram</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="parts.html#shimano">Shimano</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="parts.html#rockshox">Rockshox</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="index.html#about">About</a>
+              </li>
+              <li class="menu-item">
+                <a href="blog.html">Our blog</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- navigation menu end -->
+        </div>
+      </div>
+    </header>
+
+    <!------------------------------------------------------------------------ Home------------------------------------------------------------------------>
+    <section class="home" id="home">
+      <div class="home-text container">
+        <h2 class="home-title">The Mtb Ride Hub Blog</h2>
+        <span class="home-subtitle">Your source of great content</span>
+      </div>
+    </section>
+    <!-- Post Filter -->
+    <div class="post-filter container">
+      <span class="filter-item active-filter" data-filter="all">All</span>
+      <span class="filter-item" data-filter="bikes">Bikes</span>
+      <span class="filter-item" data-filter="parts">Parts</span>
+      <span class="filter-item" data-filter="reviews">Reviews</span>
+    </div>
+    <!-- Posts -->
+    <section class="post container">
+      <!-- Post Box 1 -->
+      <div class="post-box bikes">
+        <img src="img/mtb-random-img/mtb-1.jpg" alt="" class="post-img" />
+        <h2 class="category">Bikes</h2>
+        <a href="post-page.html" class="post-title">
+          Best mountain bikes in 2023</a
+        >
+        <span class="post-date">24 Apr 2023</span>
+        <p class="post-description">
+          This is an aggressive mountain bike with extra long suspension that
+          offers excellent stability and control on rough terrain. The frame is
+          made of carbon fiber, which makes it extremely durable, and the bike
+          has 165 mm of travel on the front and rear suspension.
+        </p>
+        <!-- Profile -->
+        <div class="profile">
+          <img src="img/blog/profile-random.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Petar</span>
+        </div>
+      </div>
+      <!-- Post Box 2 -->
+      <div class="post-box parts">
+        <img src="img/mtb-random-img/mtb-2.jpg" alt="" class="post-img" />
+        <h2 class="category">Parts</h2>
+        <a href="post-page2.html" class="post-title">
+          Top 7 best mountain bike rear derailleurs in 2022</a
+        >
+        <span class="post-date">26 Apr 2023</span>
+        <p class="post-description">
+          The Shimano XT M8100 delivers precise and smooth shifting, thanks to
+          its innovativeShadow RD+ technology. It also features a low profile
+          design, adjustable chain stabilizer, and a wide compatibility range.
+        </p>
+        <!-- Profile -->
+        <div class="profile">
+          <img src="img/blog/profile-random.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Petar</span>
+        </div>
+      </div>
+      <!-- Post Box 3 -->
+      <div class="post-box reviews">
+        <img src="img/mtb-random-img/mtb-3.jpg" alt="" class="post-img" />
+        <h2 class="category">Reviews</h2>
+        <a href="post-page3.html" class="post-title">
+          Review - SHIMANO SHADOW RD+ 1x12-speed
+        </a>
+        <span class="post-date">28 Apr 2023</span>
+        <p class="post-description">
+          The SHIMANO DEORE rear derailleur with SHIMANO SHADOW RD+ technology
+          is a game-changer in the world of mountain biking.With 1x12 speed
+          compatibility, this derailleur delivers smooth and precise shifting,
+          allowing riders to focus on the terrain ahead without having to worry
+          about gear changes.
+        </p>
+        <!-- Profile -->
+        <div class="profile">
+          <img src="img/blog/profile-random.jpg" alt="" class="profile-img" />
+          <span class="profile-name">Petar</span>
+        </div>
+      </div>
+    </section>
+    <!------------------------------------------------------------------------ Button Top of page------------------------------------------------------------------------>
+    <a href="#" class="to-top">
+      <i class="bx bx-up-arrow-circle"></i>
+    </a>
+    <!------------------------------------------------------------------------ Footer ------------------------------------------------------------------------>
+    <section class="footer" id="footer">
+      <div class="footer-container container">
+        <div class="footer-box">
+          <a href="#" class="logo">MTB RIDE HUB</a>
+          <div class="social">
+            <a
+              href="https://www.instagram.com/mtbridehub/?igshid=ZDdkNTZiNTM%3D&fbclid=IwAR1wmHmSKmaZeAoDMjJ4fXDtkwxkB7qQKqr8v8yeYzuiz7hWylZKS7YgjM0"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@mtbridehub?_t=8btslNB47li&_r=1&fbclid=IwAR34BF_cbNireMWu20xud9ksos6BJT-rxyFgmjX9hf_uYBdlXxtKHMCxqEA"
+              ><i class="bx bxl-tiktok"></i
+            ></a>
+            <a href="https://www.youtube.com/@mtbridehub"
+              ><i class="bx bxl-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-box">
+          <h3>Page</h3>
+          <a href="index.html">Home</a>
+          <a href="bikes.html">Bikes</a>
+          <a href="parts.html">Parts</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="footer-box">
+          <h3>Links</h3>
+          <a href="https://www.shimano.com/en/">Shimano</a>
+          <a href="https://www.magura.com/en/EUR/">Magura</a>
+          <a
+            href="https://www.sram.com/en/rockshox/products/forks?filters=&sort=Relevancy&page=1"
+            >Rockshox</a
+          >
+        </div>
+        <div class="footer-box">
+          <h3>Contact</h3>
+          <p>info@mtbridehub.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>&#169; MtbRideHub All Right Reserved</p>
+    </div>
+    <!-- JQuery link -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Link to JS -->
+    <script src="main.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
